@@ -1,68 +1,59 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Project Specification
 
-## Available Scripts
+"Power Lab" is a web application for a food additives web shop. 
+The client side is a single page app, dynamically updating with React, using JSX, React JS and Bootstrap.
+The server is built on Express JS and it is using Mongo Db for storing the data. 
+Redux is used as a state management library.
+Redux is a predictable state container for JavaScript apps. 
+It helps you write applications that behave consistently, run in different environments.
+The application consists of users, food products and orders. Each user can register, login and logout. 
+Users can also search for the food they are looking for, view each power details and make orders. 
+Admins can add, edit and delete food additives entries and approve orders.
+-----------------------------------------------------------------------------------------------
 
-In the project directory, you can run:
+***User Functionality 
 
-### `npm start`
+*User Login 
+  - Login in current application using email and password of already registered user. 
+*User Register 
+  - Register a new user by providing email, password and username. 
+*Home 
+  - List top-six food additives by user likes 
+-----------------------------------------------------------------------------------------------
+  
+ *** Login User Functionality 
+ 
+*Menu
+  - List all food additives. Nine per page ordered alphabetically.  
+  - Search food additives by their name
+  - Add food additives to the cart or view details
+*Food additives Details
+  - Show food additives details
+  - Add food additives review
+  - Each user can like/unlike the show food additives details
+*Cart
+  - Users add food additives to the cart
+  - Users have option to remove product from the cart or refresh the quantity to one
+  - Users have option to checkout or to continue shopping
+*My orders
+  - List user orders
+  - Navigate to order details
+*Order Details
+  - Shows full order details
+*User Logout 
+  - Logouts from the application. 
+-----------------------------------------------------------------------------------------------
+ 
+***Admin Functionality  
+ 
+*food additives add 
+  - Create a new food additives entry and save it to the database
+*Food additives edit 
+  - Edit existing food additives entry and save it to the database
+*Food additives delete
+  - Remove food additives entry from the database
+*Food additives 
+  - View all pending orders
+  - Navigate to order details
+  - Approve order
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
